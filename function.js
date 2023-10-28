@@ -81,7 +81,10 @@ paint = function () {
     //     .attr("stroke", "#000000")
     //     .attr("fill", "#ffffff");
 
-    var map = new onlanguagechange.map({
+    var map = new ol.map({
         target: "map",
+        layers: [
+            new ol.layer.Tile
+        ]
     })
 }
