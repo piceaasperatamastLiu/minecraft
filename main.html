@@ -6,13 +6,13 @@
     </title>
 </head>
 
-
-<svg id="quad"></svg>
-
 <script src="function.js"></script>
-<script src="d3.js"></script>
+<!-- <script src="d3.js"></script>
+<script src="BeijingGeo.js"></script> -->
+<script src="ol.js"></script>
 <style>
     @import url(design.css);
+    @import url(ol.css);
 </style>
 
 <body>
@@ -20,22 +20,23 @@
         <h1>
             Welcome
         </h1>
-        <hr>
-        <p id="title">请输入对应的数据</p>
-        <p id="selector">类型：
-            <select id="select">
-                <option>square</option>
-                <option>circle</option>
-                <option>triangle</option>
-            </select>
-        </p>
-
-        <p id="x_input">x=<input type="number" id="x"></p>
-        <p id="y_input">y=<input type="number" id="y"></p>
-        <p id="z_input">z=<input type="number" id="z"></p>
-        <button type="submit" onclick="WriteData()" id="but">确定</button>
-
     </center>
+    <hr>
+    <!-- <svg id="quad"></svg> -->
+    <div id="map"></div>
+    <p id="title">请输入对应的数据</p>
+    <p id="selector">类型：
+        <select id="select">
+            <option>square</option>
+            <option>circle</option>
+            <option>triangle</option>
+        </select>
+    </p>
+
+    <p id="x_input">x=<input type="number" id="x"></p>
+    <p id="y_input">y=<input type="number" id="y"></p>
+    <p id="z_input">z=<input type="number" id="z"></p>
+    <button type="submit" onclick="WriteData()" id="but">确定</button>
 </body>
 
 </html>
