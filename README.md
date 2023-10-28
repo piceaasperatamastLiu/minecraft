@@ -1,2 +1,1 @@
-hello
-world
+Map for minecraft
